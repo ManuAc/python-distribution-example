@@ -1,12 +1,18 @@
 # Example Package
 
-This is a simple example package.
-
-Steps to generate binary:
+Steps to generate the wheel file:
 
 python3 -m pip install --user --upgrade setuptools wheel
 python3 setup.py sdist bdist_wheel
 
+Steps to install the wheel file:
+
+pip install path/to/wheel/file
+
+Calling the entry point:
+
+REGISTERED_ENTRY_POINT_NAME Aargs
+Example: pjp-mip "FOO" 5
 
 
 Notes:
@@ -17,5 +23,3 @@ install_requires=[
    'A>=1',
    'B>=2'
 ]
-
-https://stackoverflow.com/questions/8620789/proper-way-to-distribute-run-scripts-with-python-package?rq=1
