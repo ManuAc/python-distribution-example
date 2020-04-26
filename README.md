@@ -1,25 +1,33 @@
-# Example Package
+# Python distribution example
 
-Steps to generate the wheel file:
+<b> Steps to generate the wheel file: <b>
 
-python3 -m pip install --user --upgrade setuptools wheel
-python3 setup.py sdist bdist_wheel
+Install setuptools and wheel packages and execute the next command from the project folder:
 
-Steps to install the wheel file:
+```
+python3 -m pip install --user --upgrade setuptools wheel <br/>
+python3 setup.py sdist bdist_wheel <br/>
+```
 
-pip install path/to/wheel/file
+Steps to install the wheel file: <br/>
+```
+pip install path/to/wheel/file <br/>
+```
 
-Calling the entry point:
+Calling the entry point: <br/>
 
-REGISTERED_ENTRY_POINT_NAME Aargs
+```
+REGISTERED_ENTRY_POINT_NAME Aargs <br/>
 Example: pjp-mip "FOO" 5
+```
 
+Notes: <br/>
 
-Notes:
+Extra arguments in setup.py: <br/>
 
-Extra arguments:
-
+```
 install_requires=[
    'A>=1',
-   'B>=2'
+   'B>=2',
 ]
+```
